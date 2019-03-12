@@ -1,3 +1,7 @@
+.floating  {
+  position: fixed;
+}
+
 .layout {
   display: grid;
   grid-template-columns: 1.5cm 1fr 1.5cm;
@@ -5,21 +9,25 @@
   height: calc(297mm + 3cm);
   width: calc(210mm + 3cm);
 }
+
 .top-margin {
   grid-column: 1 / 4;
   grid-row: 1;
   background-color: rgba(0, 0, 255, 0.2);
 }
+
 .left-margin {
   grid-column: 1;
   grid-row: 1 / 4;
   background-color: rgba(0, 128, 0, 0.21);
 }
+
 .right-margin {
   grid-column: 3;
   grid-row: 1/ 4;
   background-color: rgba(255, 0, 0, 0.2);
 }
+
 .bottom-margin {
   grid-column: 1 / 4;
   grid-row: 3;
@@ -60,6 +68,7 @@ aside {
 
 article {
   padding: .4cm;
+  background-color: white;
 }
 
 /* bleed */
@@ -90,7 +99,3 @@ article {
 .content.bleed article {
   padding-right: calc(.4cm + 1.5cm);
 }
-
-
-
-
